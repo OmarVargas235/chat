@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles-shared.css">
+    <link rel="stylesheet" type="text/css" href="styles/chat.css">
+    <title>Sala de chat</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+   <div class="container py-4 mx-lg-5">
+		<div class="row no-gutters container-chat">
+			<div class="col-12 col-md-4" id="peopleConnect">
+				<div class="form-group mb-0 py-2 px-3">
+					<input type="text" 
+						class="form-control pt-2" 
+						placeholder="Buscar Contacto" 
+						autocomplete="off"
+					>
+				</div>
+
+				<p class="chat-room py-3 px-4 mb-0">Chat de <span id="name-room" class="text-capitalize"></span></p>
+
+				<div id="container-avatares"></div>
+<!-- 
+				<figure class="container-avatares__avatar d-flex align-items-center py-2 px-4 mb-0">
+					<img 
+						src="./img/avatares/avatar_1.png" 
+						class="container-avatares__img img-fluid rounded-circle" 
+					/>
+
+					<figcaption class="ml-2">
+						<p class="mb-0">Omaasdasdasdsar</p>
+						<p class="mb-0 container-avatares__online pl-1">online</p>
+					</figcaption>
+				</figure> -->
+
+<!-- 				<figure class="container-avatares__avatar d-flex align-items-center py-2 px-4 mb-0">
+					<img 
+						src="./img/avatares/avatar_2.png" 
+						class="container-avatares__img img-fluid rounded-circle" 
+					/>
+
+					<figcaption class="ml-2">
+						<p class="mb-0 text-center">Victoria</p>
+						<p class="mb-0 container-avatares__online pl-1">online</p>
+					</figcaption>
+				</figure> -->
+			</div>
+
+			<div class="col-12 col-md-8 border border-gray border-top-1 border-md-top-0 border-right-0 border-bottom-0">
+				<header class="p-4">Sala de chat</header>
+
+				<section class="p-4 p-sm-5" id="message">
+					<!-- <figure class="d-flex justify-content-end mb-5">
+						<img 
+							src="./img/avatares/avatar_1.png" 
+							class="message__img img-fluid rounded-circle order-1" 
+						/>
+
+						<p class="mb-0 order-2 align-self-center message__hour">14:50 PM</p>
+
+						<figcaption class="mr-2">
+							<p class="mb-2 p-2">nombre</p>
+							<p class="mb-0 p-2 send">mensaje</p>
+						</figcaption>
+					</figure>
+
+					<figure class="d-flex mb-5">
+						<img 
+							src="./img/avatares/avatar_2.png" 
+							class="message__img img-fluid rounded-circle" 
+						/>
+
+						<p class="mb-0 order-2 align-self-center flex-grow-1 text-right message__hour">14:50 PM</p>
+
+						<figcaption class="mr-2">
+							<p class="mb-2 p-2">nombre</p>
+							<p class="mb-0 p-2 received">mensaje</p>
+						</figcaption>
+					</figure> -->
+				</section>
+
+				<form id="form" class="d-flex justify-content-between align-items-center p-4">
+					<input 
+						type="text" 
+						class="form-control w-50" 
+						placeholder="Escribe tu mensaje aqui" 
+						autocomplete="off"
+						id="writeMessage"
+					>
+					
+					<button 
+						type="submit"
+						class="btn btn-info rounded-circle d-flex justify-content-center align-items-center p-3"
+					>
+						<img src="img/avatares/telegrama.svg">
+					</button>
+				</form>
+			</div>
+		</div>
+
+	    <footer class="footer p-3 mt-3">
+	    	<p class="mb-0">Super Chat - <span class="text-capitalize" id="name-chat">Fernando Herrera</span></p> 
+	    </footer>
+   </div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="./styles/effect-border.js"></script>
+	<script type="text/javascript" src="./js/ui.js"></script>
+	<script type="text/javascript" src="./js/chat.socket.js"></script>
+  </body>
+</html>

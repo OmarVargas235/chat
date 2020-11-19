@@ -1,0 +1,168 @@
+body {
+	min-height: 100vh;
+	background-color: #F4F6F9;
+	color: #6C7581; 
+}
+
+footer {
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+	background-color: white; 
+}
+
+.form-group, .border-gray {
+	border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+}
+
+.form-group input {
+	border-bottom: none;
+	font-size: 1.2rem;
+}
+
+.container-chat {
+	background-color: white; 
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+/**********************Columna (col-4) id="peopleConnect**********************/
+
+#peopleConnect {
+	overflow-y: scroll;
+	height: 28vh;
+}
+
+.chat-room {
+	height: 60px;
+	background-color: #EBF3F5;
+	color: #86B5F5;
+	margin-top: .2rem;
+	cursor: pointer;
+	transition: color .2s;
+}
+
+.chat-room:hover {
+	color: #4269B7;
+}
+
+/* Avatar id="container-avatares"*/
+.container-avatares__avatar {
+	cursor: pointer;
+	height: 60px;
+}
+
+.container-avatares__avatar:hover {
+	background-color: #EBF3F5;
+}
+
+.container-avatares__avatar p {
+	white-space: nowrap; 
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.container-avatares__img {
+	width: 35px;
+	height: 35px;
+}
+
+.container-avatares__online {
+	font-size: .7rem;
+	color: #5BD9A9;
+}
+
+/**********************Columna (col-8)**********************/
+
+header {
+	font-size: 1.5rem;
+	border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+}
+
+/*section-body id="message"*/
+
+section {
+	border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+	overflow-y: scroll;
+	height: 52vh;
+}
+
+#message figcaption {
+	width: 150px;
+	overflow-wrap: break-word;
+}
+
+.message__img {
+	width: 45px;
+	height: 45px;
+}
+
+.message__hour {
+	font-size: .8rem;
+	color: #99abb4;
+}
+
+/*cuando se envia un mensaje*/
+.send {
+	background-color: #F5F6F6;
+}
+
+/*cuando se recibe un mensaje*/
+.received {
+	background-color: #CFECFD;
+}
+
+/**********************footer (input y boton de enviar mensaje)**********************/
+
+form .form-control {
+	border: none;
+	padding: 10px !important;
+}
+
+.form-control:focus {
+	box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.btn-info {
+	background-color: #398BF7;
+	border: none;
+}
+
+.btn-info:active, .btn-info:focus {
+	background-color: #398BF7 !important;
+	box-shadow: none;
+}
+
+.btn-info:hover {
+	box-shadow: 0 14px 26px -12px rgba(23, 105, 255, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(23, 105, 255, 0.2);
+	background-color: #398BF7;
+}
+
+.btn img {
+	width: 20px;
+	height: 20px;
+}
+
+/**********************Media querys altura**********************/
+
+@media (min-height: 658px) {
+	section {
+		height: 58vh;
+	}
+}
+
+@media (min-height: 876px) {
+	section {
+		height: 63vh;
+	}
+}
+
+@media (min-height: 1183px) {
+	section {
+		height: 70vh;
+	}
+}
+
+/**********************Media querys ancho**********************/
+@media (min-width: 768px) {
+	#peopleConnect {
+		height: 80vh;
+	}
+}

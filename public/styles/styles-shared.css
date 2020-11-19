@@ -1,0 +1,46 @@
+.form-group {
+	position: relative;
+}
+
+.form-control {
+	padding-left: 0 !important;
+	padding-bottom: 15px !important;
+}
+
+.form-group input {
+	border: none; 
+	border-radius: 0;
+	border-bottom: 1px solid #E9EDF2;
+}
+
+.form-group input:focus {
+	box-shadow: none;
+	border-color: #E9EDF2;
+}
+
+.form-group::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background-color: #398bf7;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transition: .5s width, .5s left;
+}
+
+.form-group-edit::after {
+	width: 99.9%;
+	left: 0%;
+}
+
+.alert-danger {
+	background-color: #F8D7DA;
+	color: #721C24;
+}
+
+.alert-success {
+	background-color: #D4EDDA;
+	color: #155724;
+}
