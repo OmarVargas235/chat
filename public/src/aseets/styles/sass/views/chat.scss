@@ -1,0 +1,28 @@
+body {
+	background-color: #F4F6F9;
+	color: #6C7581; 
+}
+
+footer {
+	@extend %shadow-backgroundColor;
+}
+
+.container-chat {
+	@extend %shadow-backgroundColor;
+}
+
+@import '../layaut/form-chat.scss';
+
+/**********************Columna (col-4)**********************/
+
+@import '../layaut/peopleConnect-chat.scss';
+
+/**********************Columna (col-8)**********************/
+
+@import '../layaut/showAndSendMessage.scss';
+
+/**********************footer (input y boton de enviar mensaje)**********************/
+
+.btn img {
+	@include height_width(20px, 20px);
+}

@@ -1,0 +1,26 @@
+/**********************Media querys altura**********************/
+
+@media (min-height: 658px) {
+	section {
+		height: 58vh;
+	}
+}
+
+@media (min-height: 876px) {
+	section {
+		height: 63vh;
+	}
+}
+
+@media (min-height: 1183px) {
+	section {
+		height: 70vh;
+	}
+}
+
+/**********************Media querys ancho**********************/
+@media (min-width: 768px) {
+	#peopleConnect {
+		height: 80vh;
+	}
+}

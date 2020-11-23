@@ -1,0 +1,19 @@
+.form-group, .border-gray {
+	border-bottom: 1px solid $color-border;
+}
+
+.form-group input {
+	border-bottom: none;
+	font-size: 1.2rem;
+}
+
+/**********************footer (input y boton de enviar mensaje)**********************/
+
+form .form-control {
+	border: none;
+	padding: 10px !important;
+}
+
+.form-control:focus {
+	box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}

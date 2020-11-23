@@ -1,0 +1,11 @@
+@import './utilities/variables.scss';
+@import './utilities/place-holder.scss';
+@import './utilities/mixins.scss';
+
+@import './components/alert.scss';
+@import './components/form.scss';
+@import './components/buttons.scss';
+
+body {
+	min-height: 100vh;
+}

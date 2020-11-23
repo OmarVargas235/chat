@@ -1,0 +1,17 @@
+@media (max-width: 500px) {
+	.w-50 {
+		width: 100% !important;
+	}
+}
+
+@media (min-width: 992px) {
+	.w-50 {
+		width: 40% !important;
+	}
+}
+
+@media (min-width: 1250px) {
+	.w-50 {
+		width: 30% !important;
+	}
+}

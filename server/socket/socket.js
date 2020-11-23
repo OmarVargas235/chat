@@ -14,7 +14,7 @@ io.on('connection', client => {
 		usersClass.saveUser(data);
 
 		const enterChat = { administrador: 'Administrador',  user: `${data.name} se unio al chat.`};
-
+		
 		client.broadcast.to(data.room).emit('userConnectOrDisconnected', usersClass.getUsers);
 		client.broadcast.to(data.room).emit('enterChat', enterChat);
 

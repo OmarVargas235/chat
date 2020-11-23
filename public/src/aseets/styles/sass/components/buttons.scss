@@ -1,0 +1,29 @@
+.btn-primary {
+	background-color: $color-btn;
+	border: 1px solid $color-btn;
+	border-radius: 60px;
+	font-size: 1.5rem;
+}
+
+.btn-primary:focus {
+	box-shadow: none !important;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+	@extend %box-shadow-btn;
+}
+
+.btn-info {
+	background-color: $color-btn;
+	border: none;
+}
+
+.btn-info:active, .btn-info:focus {
+	background-color: $color-btn !important;
+	box-shadow: none;
+}
+
+.btn-info:hover {
+	@extend %box-shadow-btn;
+	border: none !important;
+}

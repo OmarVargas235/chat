@@ -1,0 +1,43 @@
+#peopleConnect {
+	overflow-y: scroll;
+	height: 28vh;
+}
+
+/* Nombre de la sala */
+.chat-room {
+	height: 60px;
+	background-color: #EBF3F5;
+	color: #86B5F5;
+	margin-top: .2rem;
+	cursor: pointer;
+	transition: color .2s;
+}
+
+.chat-room:hover {
+	color: #4269B7;
+}
+
+/* Avatar id="container-avatares"*/
+.container-avatares__avatar {
+	cursor: pointer;
+	height: 60px;
+}
+
+.container-avatares__avatar:hover {
+	background-color: #EBF3F5;
+}
+
+.container-avatares__avatar p {
+	white-space: nowrap; 
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.container-avatares__img {
+	@include height_width(35px, 35px);
+}
+
+.container-avatares__online {
+	font-size: .7rem;
+	color: #5BD9A9;
+}

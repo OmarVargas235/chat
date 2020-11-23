@@ -1,0 +1,36 @@
+header {
+	font-size: 1.5rem;
+	border-bottom: 1px solid $color-border;
+}
+
+/*section-body id="message"*/
+
+section {
+	border-bottom: 1px solid $color-border;
+	overflow-y: scroll;
+	height: 52vh;
+}
+
+#message figcaption {
+	width: 150px;
+	overflow-wrap: break-word;
+}
+
+.message__img {
+	@include height_width(45px, 45px);
+}
+
+.message__hour {
+	font-size: .8rem;
+	color: #99abb4;
+}
+
+/*cuando se envia un mensaje*/
+.send {
+	background-color: #F5F6F6;
+}
+
+/*cuando se recibe un mensaje*/
+.received {
+	background-color: #CFECFD;
+}

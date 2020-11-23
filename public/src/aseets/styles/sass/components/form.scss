@@ -23,7 +23,7 @@
 	display: block;
 	width: 0;
 	height: 2px;
-	background-color: #398bf7;
+	background-color: $color-btn;
 	position: absolute;
 	bottom: 0;
 	left: 50%;
@@ -33,14 +33,4 @@
 .form-group-edit::after {
 	width: 99.9%;
 	left: 0%;
-}
-
-.alert-danger {
-	background-color: #F8D7DA;
-	color: #721C24;
-}
-
-.alert-success {
-	background-color: #D4EDDA;
-	color: #155724;
 }
