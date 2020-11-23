@@ -23,7 +23,7 @@ En el directorio del proyecto, puede ejecutar:
 
 Ejecuta la aplicación en modo de desarrollo.
 #### * ``nodemon server/server`` o ``node server/server``
-Abra _**http://localhost:3000**_ para verlo en el navegador.
+Abra _**http://localhost:3100**_ para verlo en el navegador.
 
 ### Tecnologias y lenguajes en lo que esta hecho el **chat** :computer:
 
